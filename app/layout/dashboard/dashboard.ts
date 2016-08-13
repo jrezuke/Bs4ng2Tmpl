@@ -1,5 +1,5 @@
 import {Component } from '@angular/core';
-import { ROUTER_DIRECTIVES, Routes } from '@angular/router';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { HomeComponent } from '../../home/home.component';
 import { AboutComponent } from '../../about/about.component';
@@ -14,16 +14,5 @@ import { SidebarComponent } from '../sidebar/sidebar';
   templateUrl: 'dashboard.html',
   directives: [ROUTER_DIRECTIVES, TopNavComponent, SidebarComponent]
 })
-
-@Routes([
-    { path: '/home', component: HomeComponent },
-    { path: '/chart', component: ChartComponent },
-    { path: '/table', component: TableComponent },
-	{ path: '/forms', component: FormComponent },
-	{ path: '/element', component: BSElementComponent},
-	{ path: '/grid', component: GridComponent },
-	{ path: '/component', component: NG2Component },
-	{ path: '/blank-page', component: BlankPageComponent }
-])
 
 export class DashboardComponent { }

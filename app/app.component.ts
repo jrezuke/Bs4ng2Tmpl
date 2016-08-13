@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES, Router, NavigationStart} from '@angular/router';
-import { SecurityService } from './security/security.service'
+import { SecurityService } from './security/security.service';
+import {TopNavComponent} from './layout/topnav/topnav';
+import {SidebarComponent} from './layout/sidebar/sidebar';
+
 @Component({
     selector: 'my-app',
-    directives: [ROUTER_DIRECTIVES],
+    directives: [ROUTER_DIRECTIVES, TopNavComponent, SidebarComponent],
     templateUrl: 'app/app.component.html',
     styleUrls: ['app/app.component.css']
 
